@@ -12,10 +12,23 @@ namespace I_m_still_here
         public int Area;
         public int Occupants;
 
+        public Building(int f, int a, int o)
+        {
+            Floors = f;
+            Area = a;
+            Occupants = o;
+        }
+
         public int AreaPerPerson()
         {
             return Area / Occupants;
         }
+
+        public int MaxOccupant(int minArea)
+        {
+            return Area / minArea;
+        }
+
     }
 
     public class BuildingDemo
@@ -23,21 +36,23 @@ namespace I_m_still_here
 
        public static void My_future()
         {
-            Building house = new Building();
-            Building office = new Building();
-            int areaPP;
+            Building house = new Building(2, 2500, 4);
+            Building office = new Building(3, 4200, 25);
+            //int areaPP;
 
 
-            house.Occupants = 4;
-            house.Area = 2500;
-            house.Floors = 2;
+            Console.WriteLine("Максимальное количество человек в доме, \n" +
+                                " если на каждого должно приходиться " +
+                                300 + " кв. футов: " +
+                                house.MaxOccupant(300)); 
+            
+            
+            Console.WriteLine("Максимальное количество человек в учреждении, \n" +
+                                " если на каждого должно приходиться " +
+                                300 + " кв. футов: " +
+                                office.MaxOccupant(300));
 
-
-            office.Occupants = 25;
-            office.Area = 4200;
-            office.Floors = 3;
-
-            areaPP = house.AreaPerPerson();
+            /*areaPP = house.AreaPerPerson();
 
             Console.WriteLine("Дом имеет:\n" +
                                 house.Floors + " этажа\n" +
@@ -53,7 +68,7 @@ namespace I_m_still_here
                                 office.Floors + " этажа\n" +
                                 office.Occupants + " работников\n" +
                                 office.Area +
-                                " кв. футов общей площади, из них " + areaPP + " приходится на одного человека");
+                                " кв. футов общей площади, из них " + areaPP + " приходится на одного человека");*/
 
 
         }

@@ -4,11 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using I_m_still_here;
-using Fight;
+using Kill_my_trouble;
+using I_want_to_fire;
+using Am;
 
 namespace I_m
 {
-   class Working
+    class Working
     {
         #region Example1
         public static void Example1()
@@ -865,7 +867,7 @@ namespace I_m
         #endregion
 
         #region Example45
-       public static void Example45()
+        public static void Example45()
         {
             int result;
 
@@ -928,7 +930,7 @@ namespace I_m
         {
             int num;
 
-            for (num=2;num<12;num++)
+            for (num = 2; num < 12; num++)
             {
                 if ((num % 2) == 0)
                     Console.WriteLine("Наименьший множитель числа " + num + " равен 2.");
@@ -1060,7 +1062,7 @@ namespace I_m
                 Console.WriteLine(x);
         }
         #endregion
-        
+
         #region Example54
         public static void Example54()
         {
@@ -1181,8 +1183,8 @@ namespace I_m
 
             Console.WriteLine("Сумма равна " + sum);
         }
-        #endregion 
-        
+        #endregion
+
         #region Example60
         public static void Example60()
         {
@@ -1403,5 +1405,38 @@ namespace I_m
         }
         #endregion
 
+        #region Example68
+        public static void Example68()
+        {
+            Kill_my_trouble.ParmDemo.More();
+        }
+        #endregion
+
+
+        #region Example69
+        public static void Example69()
+        {
+            int i = new int();
+
+            Console.WriteLine("i = " + i);
+
+        }
+        #endregion
+
+        #region Example70
+        public static void Example70()
+        {
+            I_want_to_fire.DestructMenu.M();
+        }
+        #endregion
+        
+        #region Example71
+        public static void Example71()
+        {
+            Am.UseRect.More();
+        }
+        #endregion
     }
+
+    
 }

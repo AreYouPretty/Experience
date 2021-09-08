@@ -1,7 +1,8 @@
 ﻿using System;
 using I_m;
 using I_m_still_here;
-using Fight;
+using Kill_my_trouble;
+
 
 namespace Экспериментальная_площадка
 {
@@ -9,7 +10,7 @@ namespace Экспериментальная_площадка
     {
         static void Main(string[] args)
         {
-            for (int i = 1; i <=70; i++) 
+            for (int i = 1; i <=75; i++) 
             {
                 switch (i)
                 {
@@ -346,6 +347,26 @@ namespace Экспериментальная_площадка
                     case 67:
                         Console.WriteLine("Example" + i + ": ");
                         Working.Example67();
+                        Console.WriteLine("\n");
+                        break;
+                    case 68:
+                        Console.WriteLine("Example" + i + ": ");
+                        Working.Example68();
+                        Console.WriteLine("\n");
+                        break;
+                    case 69:
+                        Console.WriteLine("Example" + i + ": ");
+                        Working.Example69();
+                        Console.WriteLine("\n");
+                        break;
+                    case 70:
+                        Console.WriteLine("Example" + i + ": ");
+                        Working.Example70();
+                        Console.WriteLine("\n");
+                        break;
+                    case 71:
+                        Console.WriteLine("Example" + i + ": ");
+                        Working.Example71();
                         Console.WriteLine("\n");
                         break;
                     default:
