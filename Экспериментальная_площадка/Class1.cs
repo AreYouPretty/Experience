@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -7,12 +8,16 @@ using I_m_still_here;
 using Kill_my_trouble;
 using I_want_to_fire;
 using Am;
+using ABG0;
+using Stack0;
+using H12h7;
+using Ument221;
+using Arg222;
 
 namespace I_m
 {
     class Working
     {
-        #region Example1
         public static void Example1()
         {
             int x, y;
@@ -25,9 +30,7 @@ namespace I_m
             Console.Write("y содержит x / 2: ");
             Console.WriteLine(y);
         }
-        #endregion
 
-        #region Example2
         public static void Example2()
         {
             int ivar;
@@ -47,9 +50,7 @@ namespace I_m
             Console.WriteLine("Pначение ivar после деления: " + ivar);
             Console.WriteLine("Значение dvar после деления: " + dvar);
         }
-        #endregion
 
-        #region Example3
         public static void Example3()
         {
             double radius, area;
@@ -58,9 +59,7 @@ namespace I_m
 
             Console.WriteLine("Площадь равна: " + area);
         }
-        #endregion
 
-        #region Example4
         public static void Example4()
         {
             int a = 2, b = 3, c;
@@ -95,9 +94,7 @@ namespace I_m
             if (c < 0)
                 Console.WriteLine("значение c отрицательно");
         }
-        #endregion
 
-        #region Example5
         public static void Example5()
         {
             int count;
@@ -107,9 +104,7 @@ namespace I_m
 
             Console.WriteLine("Готово!");
         }
-        #endregion
 
-        #region Example6
         public static void Example6()
         {
             int i, j, d;
@@ -124,9 +119,7 @@ namespace I_m
                 Console.WriteLine("j/i равно " + d);
             }
         }
-        #endregion
 
-        #region Example7
         public static void Example7()
         {
             int prod, sum;
@@ -143,9 +136,7 @@ namespace I_m
             Console.WriteLine("Произведение равно " + prod);
 
         }
-        #endregion
 
-        #region Example8
         public static void Example8()
         {
             int @if;
@@ -153,9 +144,7 @@ namespace I_m
             for (@if = 0; @if < 10; @if++)
                 Console.WriteLine("@if равно: " + @if);
         }
-        #endregion
 
-        #region Example9
         public static void Example9()
         {
             long inches, miles;
@@ -167,9 +156,7 @@ namespace I_m
 
             Console.WriteLine("Расстояние до Солнца: " + inches + " дюймов.");
         }
-        #endregion
 
-        #region Example10
         public static void Example10()
         {
             byte x;
@@ -181,9 +168,7 @@ namespace I_m
             Console.WriteLine("Сумма чисел от 1 до 100 равна " + sum);
 
         }
-        #endregion
 
-        #region Example11
         public static void Example11()
         {
             double r, area;
@@ -194,9 +179,7 @@ namespace I_m
 
             Console.WriteLine("Радиус равен " + r);
         }
-        #endregion
 
-        #region Example12
         public static void Example12()
         {
             double theta;
@@ -209,9 +192,7 @@ namespace I_m
                 Console.WriteLine();
             }
         }
-        #endregion
 
-        #region Example13
         public static void Example13()
         {
             decimal price, discount, discounted_price;
@@ -223,9 +204,7 @@ namespace I_m
 
             Console.WriteLine("Цена со скидкой: $" + discounted_price);
         }
-        #endregion
 
-        #region Example14
         public static void Example14()
         {
             decimal amount, rate_of_return;
@@ -244,9 +223,7 @@ namespace I_m
 
             Console.WriteLine("Будущая стоимость равна $" + amount);
         }
-        #endregion
 
-        #region Example15
         public static void Example15()
         {
             bool b = false;
@@ -266,9 +243,7 @@ namespace I_m
             Console.WriteLine("(10 > 9) равно " + (10 > 9));
 
         }
-        #endregion
 
-        #region Example16
         public static void Example16()
         {
             Console.WriteLine("Вы заказали " + 2 + " предмета по цене $" + 3 + " каждый.");
@@ -276,9 +251,7 @@ namespace I_m
             Console.WriteLine("В феврале {0} или {1} дней.", 28, 29);
             Console.WriteLine("В феврале {0,10} или {1,5} дней.", 28, 29);
         }
-        #endregion
 
-        #region Example17
         public static void Example17()
         {
             Console.WriteLine("Число\tКвадрат\tКуб");
@@ -291,18 +264,14 @@ namespace I_m
             Console.WriteLine("{0:###,###.##}", 123456.56);
 
         }
-        #endregion
 
-        #region Example18
         public static void Example18()
         {
             decimal balance = 12323.09m;
 
             Console.WriteLine("Текущий баланс равен {0:C}", balance);
         }
-        #endregion
 
-        #region Example19
         public static void Example19()
         {
             decimal price, discount, discounted_price;
@@ -314,9 +283,7 @@ namespace I_m
             Console.WriteLine("Цена со скидкой: ${0:C}", discounted_price);
 
         }
-        #endregion
 
-        #region Example20
         public static void Example20()
         {
             int c = 0xFF, d = 0x1a;
@@ -344,9 +311,7 @@ namespace I_m
             Console.WriteLine("Четыре\tПять\tШесть");
             Console.WriteLine("\"Зачем?\", спросил он.");
         }
-        #endregion
 
-        #region Example21
         public static void Example21()
         {
             Console.WriteLine(@"Это буквальный 
@@ -359,9 +324,7 @@ namespace I_m
 ");
             Console.WriteLine(@"Отзыв программиста: ""Когда-нибудь программист напишет здесь комментарий про C#"" ");
         }
-        #endregion
 
-        #region Example22
         public static void Example22()
         {
             double s1 = 4, s2 = 5, hypot;
@@ -372,9 +335,7 @@ namespace I_m
             Console.WriteLine("{0:#.###}.", hypot);
 
         }
-        #endregion
 
-        #region Example23
         public static void Example23()
         {
             var s1 = 4;
@@ -387,9 +348,7 @@ namespace I_m
 
             //s1 = 12m; //Ошибка.
         }
-        #endregion
 
-        #region Example24
         public static void Example24()
         {
             int x = 10;
@@ -405,9 +364,7 @@ namespace I_m
 
             Console.WriteLine("x равно " + x);
         }
-        #endregion
 
-        #region Example25
         public static void Example25()
         {
             // Эта программа не может быть скомпилирована.
@@ -423,9 +380,7 @@ namespace I_m
             }*/
 
         }
-        #endregion
 
-        #region Example26
         public static void Example26()
         {
             //Эта программа не может быть скомпилирована.
@@ -444,9 +399,7 @@ namespace I_m
              }*/
 
         }
-        #endregion
 
-        #region Example27
         public static void Example27()
         {
             long L;
@@ -463,9 +416,7 @@ namespace I_m
 
             Console.WriteLine("L и D: " + L + " " + D);
         }
-        #endregion
 
-        #region Example28
         public static void Example28()
         {
             double x, y;
@@ -515,9 +466,7 @@ namespace I_m
             ch = (char)b;
             Console.WriteLine("ch после присваивания 88: " + ch);
         }
-        #endregion
 
-        #region Example29
         public static void Example29()
         {
             /* byte b = 10;
@@ -526,9 +475,7 @@ namespace I_m
 
              Console.WriteLine("b: " + b);*/
         }
-        #endregion
 
-        #region Example30
         public static void Example30()
         {
             double n;
@@ -541,9 +488,7 @@ namespace I_m
 
             }
         }
-        #endregion
 
-        #region Example31
         public static void Example31()
         {
             int iresult, irem;
@@ -559,9 +504,7 @@ namespace I_m
             Console.WriteLine("Результат и остаток от деления 10.0 / 3.0: " + dresult + " " + drem);
 
         }
-        #endregion
 
-        #region Example32
         public static void Example32()
         {
             int x = 1, y = 0, i;
@@ -590,9 +533,7 @@ namespace I_m
             Console.WriteLine();
 
         }
-        #endregion
 
-        #region Example33
         public static void Example33()
         {
             int i = 10, j = 11;
@@ -622,9 +563,7 @@ namespace I_m
             if (b1 ^ b2)
                 Console.WriteLine("b1 ^ b2 - true");
         }
-        #endregion
 
-        #region Example34
         public static void Example34()
         {
             bool p = false, q = false;
@@ -648,9 +587,7 @@ namespace I_m
 
 
         }
-        #endregion
 
-        #region Example35
         public static void Example35()
         {
             int n = 10, d = 2;
@@ -667,9 +604,7 @@ namespace I_m
             //    Console.WriteLine(n + " делицо нацело на " + d);
 
         }
-        #endregion
 
-        #region Example36
         public static void Example36()
         {
             int i = 0;
@@ -683,9 +618,7 @@ namespace I_m
                 Console.WriteLine("Не выводится");
             Console.WriteLine("Оператор if выполняется: " + i);
         }
-        #endregion
 
-        #region Example37
         public static void Example37()
         {
             ushort num, i;
@@ -702,9 +635,7 @@ namespace I_m
 
             }
         }
-        #endregion
 
-        #region Example38
         public static void Example38()
         {
             ushort num = 10;
@@ -718,9 +649,7 @@ namespace I_m
                 Console.WriteLine(num + "- нечетное число.");
 
         }
-        #endregion
 
-        #region Example39
         public static void Example39()
         {
             int t;
@@ -733,9 +662,7 @@ namespace I_m
             }
 
         }
-        #endregion
 
-        #region Example40
         public static void Example40()
         {
             ushort num, i;
@@ -751,9 +678,7 @@ namespace I_m
                 Console.WriteLine("num после установки младшего разряда: " + num + "\n");
             }
         }
-        #endregion
 
-        #region Example41
         public static void Example41()
         {
             char ch1 = 'H', ch2 = 'i', ch3 = '!';
@@ -773,9 +698,7 @@ namespace I_m
 
             Console.WriteLine("Расшифрованное сообщение: " + ch1 + ch2 + ch3);
         }
-        #endregion
 
-        #region Example42
         public static void Example42()
         {
             sbyte b = -34;
@@ -799,9 +722,7 @@ namespace I_m
             }
 
         }
-        #endregion
 
-        #region Example43
         public static void Example43()
         {
             int val = 1;
@@ -835,9 +756,7 @@ namespace I_m
             }
 
         }
-        #endregion
 
-        #region Example44
         public static void Example44()
         {
             int n = 10;
@@ -864,9 +783,7 @@ namespace I_m
             Console.WriteLine("Значение переменной n " + " сдвига на 30 позиций влево: " + n);
 
         }
-        #endregion
 
-        #region Example45
         public static void Example45()
         {
             int result;
@@ -887,9 +804,7 @@ namespace I_m
             }
 
         }
-        #endregion
 
-        #region Example46
         public static void Example46()
         {
             int i;
@@ -904,9 +819,7 @@ namespace I_m
                     Console.WriteLine(" положительное число");
             }
         }
-        #endregion
 
-        #region Example47
         public static void Example47()
         {
             int i;
@@ -923,9 +836,7 @@ namespace I_m
                     Console.WriteLine("положительное число");
             }
         }
-        #endregion
 
-        #region Example48
         public static void Example48()
         {
             int num;
@@ -945,9 +856,7 @@ namespace I_m
 
             }
         }
-        #endregion
 
-        #region Example49
         public static void Example49()
         {
             int i;
@@ -975,9 +884,7 @@ namespace I_m
                         break;
                 }
         }
-        #endregion
 
-        #region Example50
         public static void Example50()
         {
             char ch;
@@ -1002,9 +909,7 @@ namespace I_m
                         break;
                 }
         }
-        #endregion
 
-        #region Example51
         public static void Example51()
         {
             int i;
@@ -1023,9 +928,7 @@ namespace I_m
 
                 }
         }
-        #endregion
 
-        #region Example52
         public static void Example52()
         {
             char ch1, ch2;
@@ -1051,9 +954,7 @@ namespace I_m
                     }
                 }
         }
-        #endregion
 
-        #region Example53
         public static void Example53()
         {
             int x;
@@ -1061,9 +962,7 @@ namespace I_m
             for (x = 100; x >= -100; x -= 5)
                 Console.WriteLine(x);
         }
-        #endregion
 
-        #region Example54
         public static void Example54()
         {
             int num, i, factor;
@@ -1089,9 +988,7 @@ namespace I_m
                         + num + " равен " + factor);
             }
         }
-        #endregion
 
-        #region Example55
         public static void Example55()
         {
             int i, j;
@@ -1101,9 +998,7 @@ namespace I_m
                 Console.WriteLine("i и j: " + i + " " + j);
             }
         }
-        #endregion
 
-        #region Example56
         public static void Example56()
         {
             int i, j,
@@ -1125,9 +1020,7 @@ namespace I_m
             Console.WriteLine("Наименьший множитель: " + smallest);
 
         }
-        #endregion
 
-        #region Example57
         public static void Example57()
         {
             int i, j;
@@ -1140,9 +1033,7 @@ namespace I_m
             }
 
         }
-        #endregion
 
-        #region Example58
         public static void Example58()
         {
             int i;
@@ -1170,9 +1061,7 @@ namespace I_m
                 break;
             }
         }
-        #endregion
 
-        #region Example59
         public static void Example59()
         {
             int i, sum = 0;
@@ -1183,9 +1072,7 @@ namespace I_m
 
             Console.WriteLine("Сумма равна " + sum);
         }
-        #endregion
 
-        #region Example60
         public static void Example60()
         {
             int sum = 0, fact = 1;
@@ -1199,9 +1086,7 @@ namespace I_m
             Console.WriteLine("Сумма равна " + sum);
             Console.WriteLine("Факториал равен " + fact);
         }
-        #endregion
 
-        #region Example61
         public static void Example61()
         {
             int num = 435679, mag = 0, e, result;
@@ -1231,9 +1116,7 @@ namespace I_m
             }
 
         }
-        #endregion
 
-        #region Example62
         public static void Example62()
         {
             int num = 27297, nextdigit;
@@ -1251,9 +1134,7 @@ namespace I_m
 
             Console.WriteLine();
         }
-        #endregion
 
-        #region Example63
         public static void Example63()
         {
             for (int n = -10; n <= 10; n++)
@@ -1310,9 +1191,7 @@ namespace I_m
 
             Console.WriteLine("Циклы завершены.");
         }
-        #endregion
 
-        #region Example64
         public static void Example64()
         {
             for (int i = 0; i <= 100; i++)
@@ -1330,9 +1209,7 @@ namespace I_m
                 Console.Write(i + " ");
             }
         }
-        #endregion
 
-        #region Example65
         public static void Example65()
         {
             int x = 1;
@@ -1384,9 +1261,7 @@ namespace I_m
                 + j + ", " + k);
 
         }
-        #endregion
 
-        #region Example66
         public static void Example66()
         {
             for (int i = 0; i < 10; i++)
@@ -1396,24 +1271,17 @@ namespace I_m
                 Console.WriteLine();
             }
         }
-        #endregion
 
-        #region Example67
         public static void Example67()
         {
             I_m_still_here.BuildingDemo.My_future();
         }
-        #endregion
 
-        #region Example68
         public static void Example68()
         {
             Kill_my_trouble.ParmDemo.More();
         }
-        #endregion
 
-
-        #region Example69
         public static void Example69()
         {
             int i = new int();
@@ -1421,22 +1289,574 @@ namespace I_m
             Console.WriteLine("i = " + i);
 
         }
-        #endregion
 
-        #region Example70
         public static void Example70()
         {
             I_want_to_fire.DestructMenu.M();
         }
-        #endregion
-        
-        #region Example71
+
         public static void Example71()
         {
             Am.UseRect.More();
         }
-        #endregion
-    }
 
-    
+        public static void Example72()
+        {
+            int[] sample = new int[10];
+            int i;
+
+            for (i = 0; i < 10; i++)
+                sample[i] = i;
+
+            for (i = 0; i < 10; i++)
+                Console.WriteLine("sample[" + i + "]: " + sample[i]);
+
+        }
+
+        public static void Example73()
+        {
+            int[] nums = new int[10];
+            int a = 0;
+            Random avg = new Random();
+
+            for (int i = 0; i < 10; i++)
+            {
+                nums[i] = avg.Next(8, 101);
+            }
+
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine("nums[" + i + "]: " + nums[i]);
+            }
+
+            for (int i = 0; i < 10; i++)
+            {
+                a = a + nums[i];
+            }
+
+            a = a / 10;
+
+            Console.WriteLine("\nСреднее: " + a);
+
+        }
+
+        public static void Example74()
+        {
+            int[] nums = { 99, 10, 100, 18, 78, 23, 63, 9, 87, 49 };
+            int avg = 0;
+
+            for (int i = 0; i < 10; i++)
+            {
+                avg = avg + nums[i];
+            }
+
+            avg = avg / 10;
+
+            Console.WriteLine("\nСреднее: " + avg);
+        }
+
+        public static void Example75()
+        {
+            /*int[] sample = new int[10];
+            int i;
+
+            //Воссоздать превышение границ массива.
+            for (i = 0; i < 100; i++)
+                sample[i] = i;*/
+            Console.WriteLine("Воссоздали превышение границ массива.");
+        }
+
+        public static void Example76()
+        {
+            int t, i;
+            int[,] table = new int[3, 4];
+
+            for (t = 0; t < 3; ++t)
+            {
+                for (i = 0; i < 4; ++i)
+                {
+                    table[t, i] = (t * 4) + i + 1;
+                    Console.Write(table[t, i] + " ");
+                }
+                Console.WriteLine();
+            }
+
+        }
+
+        public static void Example77()
+        {
+            int[,,] m = new int[3, 3, 3];
+            int sum = 0;
+            int n = 1;
+
+            for (int x = 0; x < 3; x++)
+                for (int y = 0; y < 3; y++)
+                    for (int z = 0; z < 3; z++)
+                        m[x, y, z] = n++;
+
+            sum = m[0, 0, 0] + m[1, 1, 1] + m[2, 2, 2];
+
+            Console.WriteLine("Сумма значений по первой диагонали: " + sum);
+
+        }
+
+        public static void Example78()
+        {
+            int i, j;
+            int[,] sqrt =
+            {
+                { 1, 1 },
+                { 2, 4 },
+                { 3, 9 },
+                { 4, 16 },
+                { 5, 25 },
+                { 6, 36 },
+                { 7, 49 },
+                { 8, 64 },
+                { 9, 81 },
+                { 10, 100 }
+            };
+
+            for (i = 0; i < 10; i++)
+                for (j = 0; j < 2; j++)
+                    Console.Write(sqrt[i, j] + " ");
+            Console.WriteLine();
+
+        }
+
+        public static void Example79()
+        {
+            int[][] jagged = new int[3][];
+            jagged[0] = new int[4];
+            jagged[1] = new int[3];
+            jagged[2] = new int[5];
+
+            int i;
+
+            for (i = 0; i < 4; i++)
+                jagged[0][i] = i;
+
+            for (i = 0; i < 3; i++)
+                jagged[1][i] = i;
+
+            for (i = 0; i < 5; i++)
+                jagged[2][i] = i;
+
+
+            for (i = 0; i < 4; i++)
+                Console.Write(jagged[0][i] + " ");
+
+            Console.WriteLine();
+
+            for (i = 0; i < 3; i++)
+                Console.Write(jagged[1][i] + " ");
+
+            Console.WriteLine();
+
+            for (i = 0; i < 5; i++)
+                Console.Write(jagged[2][i] + " ");
+
+            Console.WriteLine();
+
+        }
+
+        public static void Example80()
+        {
+            int[] nums1 = new int[10];
+            int[] nums2 = new int[10];
+            int i;
+
+            for (i = 0; i < 10; i++)
+                nums1[i] = i;
+
+            for (i = 0; i < 10; i++)
+                nums2[i] = -i;
+
+            Console.WriteLine("Содержимое массива nums1: ");
+
+
+            for (i = 0; i < 10; i++)
+                Console.Write(nums1[i] + " ");
+            Console.WriteLine();
+
+            Console.WriteLine("Содержимое массива nums2: ");
+
+
+            for (i = 0; i < 10; i++)
+                Console.Write(nums2[i] + " ");
+            Console.WriteLine();
+
+            nums2 = nums1;
+
+            Console.WriteLine("Содержание массива nums2\n" + "после присваивания: ");
+
+            for (i = 0; i < 10; i++)
+                Console.Write(nums2[i] + " ");
+            Console.WriteLine();
+
+            nums2[3] = 99;
+
+            Console.WriteLine("Содержание массива nums1 после изменения\n" + "посредством переменной nums2: ");
+
+            for (i = 0; i < 10; i++)
+                Console.Write(nums1[i] + " ");
+            Console.WriteLine();
+        }
+
+        public static void Example81()
+        {
+            int[] nums = new int[10];
+
+            Console.WriteLine("Длина массива nums равна " + nums.Length);
+
+            for (int i = 0; i < nums.Length; i++)
+                nums[i] = i * i;
+
+            Console.Write("Содержимое массива nums: ");
+
+            for (int i = 0; i < nums.Length; i++)
+                Console.Write(nums[i] + " ");
+
+            Console.WriteLine();
+
+        }
+
+        public static void Example82()
+        {
+            int i, j;
+            int[] nums1 = new int[10];
+            int[] nums2 = new int[10];
+
+            for (i = 0; i < nums1.Length; i++)
+                nums1[i] = i;
+
+            Console.Write("Исходное содержимое массива: ");
+            for (i = 0; i < nums1.Length; i++)
+                Console.Write(nums1[i] + " ");
+
+            Console.WriteLine();
+
+            if (nums2.Length >= nums1.Length)
+                for (i = 0, j = nums1.Length - 1; i < nums2.Length; i++, j--)
+                    nums2[j] = nums1[i];
+
+            Console.Write("Содержимое массива в обратном порядке: ");
+            for (i = 0; i < nums2.Length; i++)
+                Console.Write(nums2[i] + " ");
+
+            Console.WriteLine();
+
+        }
+
+        public static void Example83()
+        {
+            //имитация работы центрального процессора в сети, состоящей из четырёх узлов
+
+            int[][] network_nodes = new int[4][];
+            network_nodes[0] = new int[3];
+            network_nodes[1] = new int[7];
+            network_nodes[2] = new int[2];
+            network_nodes[3] = new int[5];
+            int i, j;
+
+            //сфабриковать данные об использовании ЦП.
+            for (i = 0; i < network_nodes.Length; i++)
+                for (j = 0; j < network_nodes[i].Length; j++)
+                    network_nodes[i][j] = i * j + 70;
+
+            Console.WriteLine("Общее количество узлов сети: " + network_nodes.Length + "\n");
+
+            for (i = 0; i < network_nodes.Length; i++)
+            {
+                for (j = 0; j < network_nodes[i].Length; j++)
+                {
+                    Console.Write("Использование в узле сети " + i + " ЦП " + j + ": ");
+                    Console.Write(network_nodes[i][j] + "% ");
+                    Console.WriteLine();
+                }
+                Console.WriteLine();
+            }
+
+        }
+
+        public static void Example84()
+        {
+            var jaggged = new[]
+            {
+                new[] {1,2,3,4},
+                new[] {9,8,7},
+                new[] {11,12,13,14,15}
+            };
+
+            for (int j = 0; j < jaggged.Length; j++)
+            {
+                for (int i = 0; i < jaggged[j].Length; i++)
+                    Console.Write(jaggged[j][i] + " ");
+
+                Console.WriteLine();
+            }
+
+
+
+        }
+
+        public static void Example85()
+        {
+            int sum = 0;
+            int[] nums = new int[10];
+
+            for (int i = 0; i < 10; i++)
+                nums[i] = i;
+
+            foreach (int x in nums)
+            {
+                Console.WriteLine("Значение элемента равно: " + x);
+                sum += x;
+            }
+
+            Console.WriteLine("Сумма равна: " + sum);
+        }
+
+        public static void Example86()
+        {
+            int sum = 0;
+            int[] nums = new int[10];
+
+            for (int i = 0; i < 10; i++)
+                nums[i] = i;
+
+            foreach (int x in nums)
+            {
+                Console.WriteLine("Значение элемента равно: " + x);
+                sum += x;
+                if (x == 4)
+                    break;
+            }
+
+            Console.WriteLine("Сумма первых 5 элементов равна: " + sum);
+        }
+
+        public static void Example87()
+        {
+            int[] nums = new int[10];
+            int val;
+            bool found = false;
+
+            for (int i = 0; i < 10; i++)
+            {
+                nums[i] = i;
+            }
+
+            val = 5;
+
+            foreach (int x in nums)
+            {
+                if (x == val)
+                {
+                    found = true;
+                    break;
+                }
+
+            }
+
+            if (found)
+                Console.WriteLine("Значение найдено!");
+
+        }
+
+        public static void Example88()
+        {
+            char[] charray = { 'Э', 'т', 'о', ' ', 'с', 'т', 'р', 'о', 'к', 'а', '.' };
+
+            string str1 = new string(charray);
+            string str2 = "Ещё одна строка.";
+
+            Console.WriteLine(str1);
+            Console.WriteLine(str2);
+
+        }
+
+        public static void Example89()
+        {
+            string str1 = "Программировать в .NET лучше всего на C#.";
+            string str2 = "Программировать в .NET лучше всего на C#.";
+            string str3 = "Строки в C# весьма эффективен.";
+            string strUp, strLow;
+            int result, idx;
+
+            Console.WriteLine("str1: " + str1);
+            Console.WriteLine("Длина строки str1: " + str1.Length);
+
+            strLow = str1.ToLower(CultureInfo.CurrentCulture);
+            strUp = str1.ToUpper(CultureInfo.CurrentCulture);
+            Console.WriteLine("Вариант строки str1, " + "набранный строчными буквами: \n" + strLow);
+            Console.WriteLine("Вариант строки str1, " + "набранный прописными буквами: \n" + strUp);
+
+            Console.WriteLine();
+
+            Console.WriteLine("Вывод строки str1 посимвольно.");
+            for (int i = 0; i < str1.Length; i++)
+                Console.WriteLine(str1[i]);
+
+            Console.WriteLine("\n");
+
+            if (str1 == str2)
+                Console.WriteLine("str1 == str2");
+            else
+                Console.WriteLine("str1 != str2");
+            if (str1 == str3)
+                Console.WriteLine("str1 == str3");
+            else
+                Console.WriteLine("str1 != str3");
+
+            result = string.Compare(str3, str1, StringComparison.CurrentCulture);
+
+            if (result == 0)
+                Console.WriteLine("Строки str1 и str3 равны");
+            else if (result < 0)
+                Console.WriteLine("Строка str1 меньше строки str3");
+            else
+                Console.WriteLine("Строка str1 больше строки str3");
+
+            Console.WriteLine();
+
+            str2 = "Один Два Три Один";
+
+            idx = str2.IndexOf("Один", StringComparison.Ordinal);
+            Console.WriteLine("Индекс первого вхождения подстроки <Один>: " + idx);
+            idx = str2.LastIndexOf("Один", StringComparison.Ordinal);
+            Console.WriteLine("Индекс последнего вхождения подстроки <Один>: " + idx);
+
+        }
+
+        public static void Example90()
+        {
+            string[] str = { "Это", "очень", "простой", "тест." };
+
+            Console.WriteLine("Исходный массив: ");
+            for (int i = 0; i < str.Length; i++)
+                Console.Write(str[i] + " ");
+            Console.WriteLine("\n");
+
+            str[1] = "тоже";
+            str[3] = "до предела тест!";
+
+            Console.WriteLine("Видоизмененный массив: ");
+            for (int i = 0; i < str.Length; i++)
+                Console.Write(str[i] + " ");
+
+        }
+
+        public static void Example91()
+        {
+            int num, nextdigit, numdigits;
+            int[] n = new int[20];
+
+            string[] digits = { "нуль", "один", "два", "три", "четыре", "пять", "шесть", "семь", "восемь", "девять" };
+
+            num = 1908;
+
+            Console.WriteLine("Число: " + num);
+
+            Console.WriteLine("");
+
+            nextdigit = 0;
+            numdigits = 0;
+
+            do
+            {
+                nextdigit = num % 10;
+                n[numdigits] = nextdigit;
+                numdigits++;
+                num /= 10;
+            }
+            while (num > 0);
+
+            numdigits--;
+
+            for (; numdigits >= 0; numdigits--)
+                Console.Write(digits[n[numdigits]] + " ");
+
+            Console.WriteLine();
+
+        }
+
+        public static void Example92()
+        {
+            string orgstr = "В C# упрощается упрощение со строками.";
+
+            string substr = orgstr.Substring(5, 20);
+
+            Console.WriteLine("orgstr: " + orgstr);
+            Console.WriteLine("substr: " + substr);
+
+        }
+
+        public static void Example93()
+        {
+            string[] strs = { "один", "два", "три", "семь", "девять" };
+
+            foreach (string s in strs)
+            {
+                switch (s)
+                {
+                    case "один":
+                        Console.Write(1);
+                        break;
+                    case "два":
+                        Console.Write(2);
+                        break;
+                    case "три":
+                        Console.Write(3);
+                        break;
+                    case "семь":
+                        Console.Write(7);
+                        break;
+                    case "девять":
+                        Console.Write(9);
+                        break;
+                }
+            }
+            Console.WriteLine();
+        }
+
+
+        public static void Example94()
+        {
+            ABG ob = new ABG();
+
+            ob.SetAlpha(-99);
+            ob.SetBeta(19);
+
+            Console.WriteLine("ob.alpha равно " + ob.GetAlpha());
+            Console.WriteLine("ob.beta равно " + ob.GetBeta());
+
+            // ob.alpha = 10; //Ошибка! Private.
+            // ob.beta = 7; // Ошибка! Private.
+
+            ob.gamma = 94;
+
+        }
+
+        public static void Example95()
+        {
+            Stack0.StackDemo.Nn();
+        }
+
+        public static void Example96()
+        {
+            H12h7.P35.M12();
+        }
+
+        public static void Example97()
+        {
+            Ument221.Arg220.CallByValue.Om();
+        }
+
+        public static void Example98()
+        {
+            Arg222.CallByRef.M();
+        }
+
+    }
 }

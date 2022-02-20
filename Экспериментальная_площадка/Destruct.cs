@@ -33,7 +33,7 @@ namespace I_want_to_fire
 
                 Destruct ob = new Destruct(0);
 
-                for (count = 1; count < 500000; count++)
+                for (count = 1; count < 50000; count++)
                 {
                     ob.Generator(count);
                 }

@@ -2,6 +2,7 @@
 using I_m;
 using I_m_still_here;
 using Kill_my_trouble;
+using Stack0;
 
 
 namespace Экспериментальная_площадка
@@ -10,7 +11,7 @@ namespace Экспериментальная_площадка
     {
         static void Main(string[] args)
         {
-            for (int i = 1; i <=75; i++) 
+            for (int i = 1; i <=100; i++) 
             {
                 switch (i)
                 {
@@ -367,6 +368,141 @@ namespace Экспериментальная_площадка
                     case 71:
                         Console.WriteLine("Example" + i + ": ");
                         Working.Example71();
+                        Console.WriteLine("\n");
+                        break;
+                    case 72:
+                        Console.WriteLine("Example" + i + ": ");
+                        Working.Example72();
+                        Console.WriteLine("\n");
+                        break;
+                    case 73:
+                        Console.WriteLine("Example" + i + ": ");
+                        Working.Example73();
+                        Console.WriteLine("\n");
+                        break;
+                    case 74:
+                        Console.WriteLine("Example" + i + ": ");
+                        Working.Example74();
+                        Console.WriteLine("\n");
+                        break;
+                    case 75:
+                        Console.WriteLine("Example" + i + ": ");
+                        Working.Example75();
+                        Console.WriteLine("\n");
+                        break;
+                    case 76:
+                        Console.WriteLine("Example" + i + ": ");
+                        Working.Example76();
+                        Console.WriteLine("\n");
+                        break;
+                    case 77:
+                        Console.WriteLine("Example" + i + ": ");
+                        Working.Example77();
+                        Console.WriteLine("\n");
+                        break;
+                    case 78:
+                        Console.WriteLine("Example" + i + ": ");
+                        Working.Example78();
+                        Console.WriteLine("\n");
+                        break;
+                    case 79:
+                        Console.WriteLine("Example" + i + ": ");
+                        Working.Example79();
+                        Console.WriteLine("\n");
+                        break;
+                    case 80:
+                        Console.WriteLine("Example" + i + ": ");
+                        Working.Example80();
+                        Console.WriteLine("\n");
+                        break;
+                    case 81:
+                        Console.WriteLine("Example" + i + ": ");
+                        Working.Example81();
+                        Console.WriteLine("\n");
+                        break;
+                    case 82:
+                        Console.WriteLine("Example" + i + ": ");
+                        Working.Example82();
+                        Console.WriteLine("\n");
+                        break;
+                    case 83:
+                        Console.WriteLine("Example" + i + ": ");
+                        Working.Example83();
+                        Console.WriteLine("\n");
+                        break;
+                    case 84:
+                        Console.WriteLine("Example" + i + ": ");
+                        Working.Example84();
+                        Console.WriteLine("\n");
+                        break; 
+                    case 85:
+                        Console.WriteLine("Example" + i + ": ");
+                        Working.Example85();
+                        Console.WriteLine("\n");
+                        break;
+                    case 86:
+                        Console.WriteLine("Example" + i + ": ");
+                        Working.Example86();
+                        Console.WriteLine("\n");
+                        break;
+                    case 87:
+                        Console.WriteLine("Example" + i + ": ");
+                        Working.Example87();
+                        Console.WriteLine("\n");
+                        break;
+                    case 88:
+                        Console.WriteLine("Example" + i + ": ");
+                        Working.Example88();
+                        Console.WriteLine("\n");
+                        break;
+                    case 89:
+                        Console.WriteLine("Example" + i + ": ");
+                        Working.Example89();
+                        Console.WriteLine("\n");
+                        break;
+                    case 90:
+                        Console.WriteLine("Example" + i + ": ");
+                        Working.Example90();
+                        Console.WriteLine("\n");
+                        break; 
+                    case 91:
+                        Console.WriteLine("Example" + i + ": ");
+                        Working.Example91();
+                        Console.WriteLine("\n");
+                        break;
+                    case 92:
+                        Console.WriteLine("Example" + i + ": ");
+                        Working.Example92();
+                        Console.WriteLine("\n");
+                        break;
+                    case 93:
+                        Console.WriteLine("Example" + i + ": ");
+                        Working.Example93();
+                        Console.WriteLine("\n");
+                        break;
+                    case 94:
+                        Console.WriteLine("Example" + i + ": ");
+                        Working.Example94();
+                        Console.WriteLine("\n");
+                        break;
+                    case 95:
+                        Console.WriteLine("Example" + i + ": ");
+                        Working.Example95();
+                        Console.WriteLine("\n");
+                        break;   
+                    case 96:
+                        Console.WriteLine("Example" + i + ": ");
+                        Working.Example96();
+                        Console.WriteLine("\n");
+                        break;
+                    case 97:
+                        Console.WriteLine("Example" + i + ": ");
+                        Working.Example97();
+                        Console.WriteLine("\n");
+                        break;
+                    case 98:
+                        Console.WriteLine("Example" + i + ": ");
+                        Working.Example98();
                         Console.WriteLine("\n");
                         break;
                     default:
